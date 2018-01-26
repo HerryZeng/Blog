@@ -162,7 +162,11 @@ LOGGING = {
         },
     },
 }
-print(STATICFILES_DIRS)
+# print(STATICFILES_DIRS)
 
 #自定义用户Model
 AUTH_USER_MODEL='home.User'
+
+#文件上传目录
+MEDIA_URL='/uploads/'
+MEDIA_ROOT =os.path.join(BASE_DIR,'uploads')
