@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^admin/upload/(?P<dir_name>[^/]+)$',upload_image,name ='upload_image'),
     url(r'^$', views.index, name='index'),
     url(r'^uploads/(?P<path>.*)$',serve,{"document_root":settings.MEDIA_ROOT,}),
+    url(r'^archive/', views.archive, name='archive'),
 ]
